@@ -1,0 +1,1 @@
+{'n_images': 40, 'n_dogs_img': 30, 'n_notdogs_img': 10, 'n_match': 35, 'n_correct_dogs': 28, 'n_correct_notdogs': 12, 'n_correct_breed': 28,'pct_match': 87.5, 'pct_correct_dogs': 70.0, 'pct_correct_breed': 70.0, 'pct_correct_notdogs': 30.0}
