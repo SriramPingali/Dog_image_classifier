@@ -31,7 +31,7 @@ from classifier import classifier
 # 
 def classify_images(images_dir, results_dic, model):
     for filename,pet_label in results_dic.items()
-        classification=classifier(images_dir,model).lower().strip()
+        classification=classifier(images_dir+users_key, model).lower().strip()
         pet_label.append(classification.lower())
         #computing classifier label fromm classification function
         different_names=classification.lower().split(",")
