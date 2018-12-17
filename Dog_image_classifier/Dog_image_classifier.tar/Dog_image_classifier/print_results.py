@@ -128,9 +128,9 @@ def print_results(results_dic, results_stats_dic, model,
             # Pet Image Label is a Dog - Classified as NOT-A-DOG -OR- 
             # Pet Image Label is NOT-a-Dog - Classified as a-DOG
             if results_dic[key][3]==1 and results_dic[key][4]==0:
-                print('Pet_lavel:{},Classifier_label:{}'.format(results_dic[key][0],results_dic[key][1]))
+                print('Pet_label:{},Classifier_label:{}'.format(results_dic[key][0],results_dic[key][1]))
             elif results_dic[key][4]==1 and results_dic[key][3]==0:
-                print('Pet_lavel:{},Classifier_label:{}'.format(results_dic[key][0],results_dic[key][1]))
+                print('Pet_label:{},Classifier_label:{}'.format(results_dic[key][0],results_dic[key][1]))
                 
                 
 
