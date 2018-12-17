@@ -127,7 +127,7 @@ def adjust_results4_isadog(results_dic, dogfile):
             if results_dic[key][1] in dognames_dic:
                 results_dic[key].extend((0,1))
                 break
-           else:
+            else:
                 results_dic[key].extend((0,1))
                 break
           
