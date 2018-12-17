@@ -32,18 +32,18 @@ from classifier import classifier
 def classify_images(images_dir, results_dic, model):
     for filename,pet_label in results_dic.items():
         image_location="pet_images/"+str(filename)
-        classification=classifier(image_location,model)
+        classification=classifier(image_location,model).lower().strip()
         pet_label.append(classification.lower())
         #computing classifier label fromm classification function
         different_names=classification.lower().split(",")
-        for name in different_names:
-            name=name.strip()
+        for idx in range(len(different_names)):
+            different_names[idx] = different_names[idx].strip()
         if pet_label[0] in different_names:
-            pet_label.append("1")
+            pet_label.append(1)
         elif " "+pet_label[0] in different_names:
-            pet_label.append("1")
+            pet_label.append(1)
         else:
-            pet_label.append("0")
+            pet_label.append(0)
 
     return()
 
